@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		BD3CF81C2700852600D3350D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3CF81B2700852600D3350D /* AppDelegate.swift */; };
 		BD3CF81E2700852600D3350D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3CF81D2700852600D3350D /* SceneDelegate.swift */; };
-		BD3CF8202700852600D3350D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3CF81F2700852600D3350D /* ViewController.swift */; };
 		BD3CF8232700852600D3350D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3CF8212700852600D3350D /* Main.storyboard */; };
 		BD3CF8252700852900D3350D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD3CF8242700852900D3350D /* Assets.xcassets */; };
 		BD3CF8282700852900D3350D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3CF8262700852900D3350D /* LaunchScreen.storyboard */; };
+		BD3CF8302700947300D3350D /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3CF82F2700947200D3350D /* Activity.swift */; };
+		BD3CF8322700959000D3350D /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3CF8312700959000D3350D /* ActivityViewController.swift */; };
+		BDCCF4C92700D7AD00607DA5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCCF4C82700D7AD00607DA5 /* NetworkManager.swift */; };
+		BDCCF4CB2700DB3C00607DA5 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCCF4CA2700DB3C00607DA5 /* ErrorMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BD3CF8182700852600D3350D /* FindActivityApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindActivityApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD3CF81B2700852600D3350D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD3CF81D2700852600D3350D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BD3CF81F2700852600D3350D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD3CF8222700852600D3350D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD3CF8242700852900D3350D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD3CF8272700852900D3350D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD3CF8292700852900D3350D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD3CF82F2700947200D3350D /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		BD3CF8312700959000D3350D /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		BDCCF4C82700D7AD00607DA5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BDCCF4CA2700DB3C00607DA5 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,66 @@
 		BD3CF81A2700852600D3350D /* FindActivityApp */ = {
 			isa = PBXGroup;
 			children = (
-				BD3CF81B2700852600D3350D /* AppDelegate.swift */,
-				BD3CF81D2700852600D3350D /* SceneDelegate.swift */,
-				BD3CF81F2700852600D3350D /* ViewController.swift */,
-				BD3CF8212700852600D3350D /* Main.storyboard */,
-				BD3CF8242700852900D3350D /* Assets.xcassets */,
-				BD3CF8262700852900D3350D /* LaunchScreen.storyboard */,
-				BD3CF8292700852900D3350D /* Info.plist */,
+				BDCCF4CD2700FD9D00607DA5 /* ViewControllers */,
+				BDCCF4C72700D77C00607DA5 /* Services */,
+				BDCCF4CC2700FD8400607DA5 /* StoryBoards */,
+				BDCCF4CF2700FDE600607DA5 /* Models */,
+				BDCCF4CE2700FDC000607DA5 /* App */,
+				BDCCF4D02700FE0300607DA5 /* Resourses */,
 			);
 			path = FindActivityApp;
+			sourceTree = "<group>";
+		};
+		BDCCF4C72700D77C00607DA5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BDCCF4CA2700DB3C00607DA5 /* ErrorMessage.swift */,
+				BDCCF4C82700D7AD00607DA5 /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BDCCF4CC2700FD8400607DA5 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				BD3CF8212700852600D3350D /* Main.storyboard */,
+				BD3CF8262700852900D3350D /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		BDCCF4CD2700FD9D00607DA5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BD3CF8312700959000D3350D /* ActivityViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BDCCF4CE2700FDC000607DA5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BD3CF81B2700852600D3350D /* AppDelegate.swift */,
+				BD3CF81D2700852600D3350D /* SceneDelegate.swift */,
+				BD3CF8292700852900D3350D /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BDCCF4CF2700FDE600607DA5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BD3CF82F2700947200D3350D /* Activity.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BDCCF4D02700FE0300607DA5 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				BD3CF8242700852900D3350D /* Assets.xcassets */,
+			);
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD3CF8202700852600D3350D /* ViewController.swift in Sources */,
 				BD3CF81C2700852600D3350D /* AppDelegate.swift in Sources */,
+				BDCCF4C92700D7AD00607DA5 /* NetworkManager.swift in Sources */,
+				BDCCF4CB2700DB3C00607DA5 /* ErrorMessage.swift in Sources */,
+				BD3CF8302700947300D3350D /* Activity.swift in Sources */,
+				BD3CF8322700959000D3350D /* ActivityViewController.swift in Sources */,
 				BD3CF81E2700852600D3350D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +351,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N2N5N7MK77;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FindActivityApp/Info.plist;
+				INFOPLIST_FILE = FindActivityApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +379,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N2N5N7MK77;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FindActivityApp/Info.plist;
+				INFOPLIST_FILE = FindActivityApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -8,6 +8,6 @@
 import Foundation
 
 enum ErrorMessage: String, Error {
-    case invalidData = "Sorry. Smth went wrong, try again"
+    case invalidData = "Sorry. Something went wrong, try again"
     case invalidResponse = "Server error. Pleas modify your search and try again"
 }
