@@ -35,7 +35,7 @@ extension ActivityViewController {
                     self.typeLabel.text = "Type: \(activity.type ?? "")"
                     self.participantsLabel.text = "Participants: \(activity.participants ?? 0)"
                     
-                    self.priceProgressView.setProgress(activity.price ?? 0, animated: false)
+                    self.priceProgressView.setProgress(activity.price ?? 0, animated: true)
                     self.accessibilityProgressView.setProgress(activity.accessibility ?? 0, animated: true)
                 }
             case .failure(let error):
